@@ -1,4 +1,4 @@
-package fr.lightnew;
+package fr.lightnew.versions;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.authlib.properties.Property;
@@ -12,15 +12,9 @@ import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.UUID;
 
-/*
-#=======================================================#
-#/*\ modify the item skull according to your version /*\#
-#=======================================================#
- */
-
-public abstract class ItemBuilder {
+public class IB_1_20 {
     ItemBuilder items;
-    public ItemBuilder(ItemBuilder itemBuilder) {
+    public IB_1_20(ItemBuilder itemBuilder) {
         this.items=itemBuilder;
     }
 
@@ -69,7 +63,7 @@ public abstract class ItemBuilder {
         SkullMeta itemMeta;
         if (name == null || lores == null) return null;
 
-        itemStack = new ItemStack(Material.SKULL_ITEM, amount, (short) 3);
+        itemStack = new ItemStack(Material.PLAYER_HEAD, amount, (short) 3);
 
         itemMeta = (SkullMeta) itemStack.getItemMeta();
         itemMeta.setDisplayName(name);
@@ -84,7 +78,7 @@ public abstract class ItemBuilder {
         SkullMeta itemMeta;
         if (name == null || lores == null) return null;
 
-        itemStack = new ItemStack(Material.SKULL, amount, (short) 3);
+        itemStack = new ItemStack(Material.PLAYER_HEAD, amount, (short) 3);
 
         itemMeta = (SkullMeta) itemStack.getItemMeta();
 

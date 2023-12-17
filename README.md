@@ -1,7 +1,6 @@
 # ItemBuilder
 
-***Here is a Class to integrate in your project to create a one-line item, 
-creation of the custom skull***
+***Version testing -> 1.8, 1.20***
 
 ## Example ONE
 Create simple item with name and if you want lore (lore is optional)
@@ -41,7 +40,7 @@ private Inventory example3() {
 value is custom head : [Custom Heads](https://minecraft-heads.com/custom-heads) | 
 take at the bottom of the page in other: 'value:'
 
-![img.png](src/main/java/fr/lightnew/img/img.png)
+![img.png](src/main/java/fr/lightnew/other/img.png)
 
 **_Copy this and paste in value ↓_**
 ```
