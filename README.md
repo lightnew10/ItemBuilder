@@ -1,6 +1,6 @@
 # ItemBuilder
 
-***Version testing -> 1.8, 1.20***
+***test on versions -> 1.8, 1.20***
 
 ## Example ONE
 Create simple item with name and if you want lore (lore is optional)
